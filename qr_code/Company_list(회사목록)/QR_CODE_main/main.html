@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+
+		<title>QR_CODE_WEB</title>
+
+		<meta charset="utf-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"crossorigin="anonymous">
+        
+		<link rel="stylesheet" href="assets/css/qr_code_main.css" />
+        
+
+	</head>
+
+	<body class="is-preload">
+
+    
+
+            <!--헤더_상단-->
+
+            <div id="header_t">
+                <div class="header_t_gnb">
+                   <ul>
+                    <li class="pw_ch"><a href="#">비밀번호 변경</a></li>
+                    <li>|</li>
+                    <li class="logout"><a href="#">로그아웃</a></li>
+                  </ul>
+                </div>
+                <!--//header_t_gnb--> 
+              </div>
+              <!--//header_t-->
+
+ 
+        
+        
+             <!--현재 페이지를 나타날 때 font-weight:600; css-->
+              <!--로고 영역-->
+ 
+                  <div id="header_logo_w" class="wrap">
+                    <div class="area_info" style=" height:60px;">
+                      <ul>
+                        <li>전체현황</li>
+                        <li>></li>
+                        <li style="font-weight:600;">기업목록</li>
+                      </ul>
+                    </div>
+                    <!--//area_info--> 
+                    </div>
+                    <!--//header_logo_w--> 
+
+
+
+        
+        
+		<!-- Header_submenu -->
+
+			<div id="header">
+				<div class="top">
+                    
+                    <div class="top_center" style=" width:100%; margin:0 auto;">
+                        <img src="images/kb_logo.png" width="170px; height:79px;" style="padding:5px;">
+                    </div>
+                    
+					<!-- Logo -->
+                        
+						<div id="logo">
+							<h1 id="title">동대문 지점<p>이창훈님</h1>                 
+						</div>
+
+                    <!--li클릭했을 때 --- font-size:23px;, background:rgba(0, 0, 0, 0.15) 뒤에 유지되어야 함-->
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+                                <li class="has-sub"><a href="#">전체현황</a></li>
+								<li class="has-sub"><a href="#">재고자산 등록</a></li>
+								<li class="has-sub"><a href="#">기업목록</a></li>
+							</ul>
+                            <hr style="border:0.5px solid #39679a; width:230px;">
+                            <div class="btn_box" style="position: relative; padding:0.5em 1.5em 0.5em 2.1em; text-align:left; font-size: 0.55em; color:rgba(255, 255, 255, 0.8);">
+                                <span style="cursor:pointer;">공지사항<img src="images/NEW_ICORN.png" style="vertical-align: middle; width:18px; margin:-4px 0 0 3px;"></span>
+                            </div>
+						</nav>
+                        <!--//nav-->
+                    
+				</div>
+                <!--//top-->  
+			</div>
+            <!--//header-->
+ 
+        
+        
+
+		<!-- Main -->
+                
+			<div id="main">
+				<!-- Intro -->
+                    
+                    <!-- 첫번째 영역-->
+                
+					<section id="one" class="one dark cover">
+						<div class="container">
+                           <div class="con_status" >
+                         <!--문제발생-->
+						<div class="company_container">
+                        	<div class="tableTop">
+                                <div class="total_list_num" style="float:left;">
+                                    기업목록(총 <span style="font-weight:500; color:#3c495a;">10</span>개)
+                                </div>
+                                <div class="s_box" style="float:right;">
+                                <input type="text" placeholder="기업명을 입력해주세요" style="width:241px; height:29px; border-radius:16.5px; border:solid 0.5px #e9e9e9; background-color:#fff; font-size:15px; color:#c8c8c8; font-weight:300; padding-left:14px;">
+                                 <input type="button" class="img-button" style="width:100px; height:29px; font-weight:500; border-radius:16.5px; background-color:#31b3e9; font-size:14px; padding-left:13px; background-image:url(images/app-bar-iocn-search.png); background-repeat:no-repeat; background-position:5px center;" value="Search">
+                                </div>
+                            </div>
+                            <div class="tableRectangle">
+                            	<div style="width:30%; float:left; font-size:17px; color:#111; font-style:normal; font-stretch:normal; letter-spacing:normal;">기업</div>
+                                <div style="width:30%; float:left;  font-size:17px; color:#111; font-style:normal; font-stretch:normal; letter-spacing:normal;">보유창고/보유담보</div>
+                                <div style="width:20%; float:left;  font-size:17px; color:#111; font-style:normal; font-stretch:normal; letter-spacing:normal;">등록날짜</div>
+                                <div style="width:20%; float:left;  font-size:17px; color:#111; font-style:normal; font-stretch:normal; letter-spacing:normal;">상태</div>
+                            </div>
+                            <div class="companyList_box">
+                              <section class='inner-container' id='inner-container'>
+                                <article>
+                                  <div class="com_nm">홍길동업체</div>
+                                  <div class="com_dambo" class='client-name'>AAA창고 / N개</div>
+                                  <div class="com_date">2019.08.06</div>
+                                  <div class="com_event"> <img src="images/list_icon_error_qrsticker.gif" style="vertical-align:middle;" alt=""> <img src="images/list_icon_error_timeover.gif"  style="vertical-align:middle;"></div>
+                                </article>
+                                <article>
+                                  <div class="com_nm">홍길동업체</div>
+                                  <div class="com_dambo" class='client-name'>AAA창고 / N개</div>
+                                  <div class="com_date">2019.08.06</div>
+                                  <div class="com_event"> <img src="images/list_icon_error_qrsticker.gif" style="vertical-align:middle;" alt=""> <img src="images/list_icon_error_timeover.gif"  style="vertical-align:middle;"></div>
+                                </article>
+                                 
+                                
+                            </section>
+                             </div>
+                             <div class="table_number">
+                                <img src="images/btn_prev.gif">
+                                <a style="font-weight:600; font-size:20px; padding:0 5px;">1</a>
+                                <a  style="font-weight:500; color:#7c818c; font-size:20px; padding:0 5px;">2</a>
+                                <a  style="font-weight:500;  color:#7c818c; font-size:20px; padding:0 5px;">3</a>
+                                <img src="images/btn_next.gif">
+                             </div>
+                            </div>
+                            <!--//company_container-->
+                            	
+ 
+                            </div>
+                            <!--//con_status-->        
+				        </div>			
+                        <!--//container-->
+				    </section>
+                    <!-- //첫번째 영역-->
+			</div>
+            <!--//main-->
+ 
+
+		<!-- Footer -->
+
+			<div id="footer">
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li><img src="images/cntech_hp_logo.png" alt="" width="160px;"></li>
+                        <li style="text-align: left; font-size:0.8em; ">대전광역시 유성구 문화원로 146번길 17 4층<br>© Untitled. All rights reserved.</li>
+					</ul>
+
+
+			</div>
+
+ 
+
+		<!-- Scripts -->
+		
+            
+            <script src="assets/js/jquery.min.js"></script>
+        
+            <script src="http://code.jquery.com/jquery-1.8.2.min.js"></Script>
+            
+            <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+            
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+			
+            <!--반응형 Nav-->
+            
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			
+            <script src="assets/js/browser.min.js"></script>
+
+            <script src="assets/js/breakpoints.min.js"></script>
+            
+            <script src="assets/js/util.js"></script>
+			
+            <!--//반응형 Nav-->
+			
+			<script src="assets/js/main.js"></script>
+        
+	
+    </body>
+</html>

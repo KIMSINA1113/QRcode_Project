@@ -1,0 +1,472 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+
+		<title>QR_CODE_WEB</title>
+
+		<meta charset="utf-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6FriG1LzVmG4J9194pjsJAKs3nsfX60k&callback=initMap"></script>
+        
+         <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/css/materialize.min.css">-->
+        
+		<link rel="stylesheet" href="assets/css/qr_code_dambo_list_modal.css" />
+        
+
+	</head>
+
+	<body class="is-preload">
+
+    
+
+            <!--헤더_상단-->
+
+            <div id="header_t">
+                <div class="header_t_gnb">
+                   <ul>
+                    <li class="pw_ch"><a href="#">비밀번호 변경</a></li>
+                    <li>|</li>
+                    <li class="logout"><a href="#">로그아웃</a></li>
+                  </ul>
+                </div>
+                <!--//header_t_gnb--> 
+              </div>
+              <!--//header_t-->
+
+ 
+        
+        
+             <!--현재 페이지를 나타날 때 font-weight:600; css-->
+              <!--로고 영역-->
+ 
+                  <div id="header_logo_w" class="wrap">
+                    <div class="area_info" style=" height:131px; ">
+                      <ul>
+                        <li>전체현황</li>
+                        <li>></li>
+                        <li style="font-weight:600;">기업목록</li>
+                      </ul>
+                      <div class="company_nm">
+                      	홍길동업체
+                      </div>
+						<!--//company_nm-->
+                    </div>
+                    <!--//area_info--> 
+                    </div>
+                    <!--//header_logo_w--> 
+
+
+
+        
+        
+		<!-- Header_submenu -->
+
+			<div id="header">
+				<div class="top">
+                    
+                    <div class="top_center" style=" width:100%; margin:0 auto;">
+                        <img src="images/kb_logo.png" width="170px; height:79px;" style="padding:5px;">
+                    </div>
+                    
+					<!-- Logo -->
+                        
+						<div id="logo">
+							<h1 id="title">동대문 지점<p>이창훈님</h1>                 
+						</div>
+
+                    <!--li클릭했을 때 --- font-size:23px;, background:rgba(0, 0, 0, 0.15) 뒤에 유지되어야 함-->
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+                                <li class="has-sub"><a href="#">전체현황</a></li>
+								<li class="has-sub"><a href="#">재고자산 등록</a></li>
+								<li class="has-sub"><a href="#">기업목록</a></li>
+							</ul>
+                            <hr style="border:0.5px solid #39679a; width:230px;">
+                            <div class="btn_box" style="position: relative; padding:0.5em 1.5em 0.5em 2.1em; text-align:left; font-size: 0.55em; color:rgba(255, 255, 255, 0.8);">
+                                <span style="cursor:pointer;">공지사항<img src="images/NEW_ICORN.png" style="vertical-align: middle; width:18px; margin:-4px 0 0 3px;"></span>
+                            </div>
+						</nav>
+                        <!--//nav-->
+                    
+				</div>
+                <!--//top-->  
+			</div>
+            <!--//header-->
+ 
+        
+        
+
+		<!-- Main -->
+                
+			<div id="main">
+				<!-- Intro -->
+                    
+                    <!-- 첫번째 영역-->
+                
+					<section id="one" class="one dark cover">
+                    	<div class="package_box" style=" width:20%; height:1100px; float:left; margin-left:-25px; margin-top:-25px; background-color:#fafcfe; ">
+                        <input type="text" placeholder="창고명을 입력해주세요"  class="package_search_box" style=" background-image:url(images/app-bar-iocn-search.png); background-repeat:no-repeat; background-position:5px center; background-size:30px; margin-left:50px; margin-bottom:12px;">
+                        
+                       	<div class="package_list" style="color:#7c818c; padding:40px; height:1040px;  overflow-y:scroll; border-top:0.7px solid #eaeaea;">
+                        	<ul>
+                            	<li><span style="color:#3c495a !important; font-size:18px; font-weight:600 !important;">AAA 물류창고</li>
+                                <li style="color:#7c818c; font-size:15px; font-weight:300;">AAB 물류창고</li>
+                                <li style="color:#7c818c; font-size:15px; font-weight:300;">AAC 물류창고</li>
+                                <li style="color:#7c818c; font-size:15px; font-weight:300;">AAD 물류창고</li>
+                                <li style="color:#7c818c; font-size:15px; font-weight:300;">AAE 물류창고</li>
+                                <li style="color:#7c818c; font-size:15px; font-weight:300;">AAF 물류창고</li>
+                                <li style="color:#7c818c; font-size:15px; font-weight:300;">AAG 물류창고</li>
+                                <li style="color:#7c818c; font-size:15px; font-weight:300;">AAH 물류창고</li>
+                                <li style="color:#7c818c; font-size:15px; font-weight:300;">AAI 물류창고</li>
+                                <li style="color:#7c818c; font-size:15px; font-weight:300;">AAJ 물류창고</li>
+                                <li style="color:#7c818c; font-size:15px; font-weight:300;">AAK 물류창고</li>
+                                <li style="color:#7c818c; font-size:15px; font-weight:300;">AAL 물류창고</li>
+                                <li style="color:#7c818c; font-size:15px; font-weight:300;">AAM 물류창고</li>
+                                <li style="color:#7c818c; font-size:15px; font-weight:300;">AAN 물류창고</li>
+                                <li style="color:#7c818c; font-size:15px; font-weight:300;">AAO 물류창고</li>
+                                <li style="color:#7c818c; font-size:15px; font-weight:300;">AAP 물류창고</li>
+                                <li style="color:#7c818c; font-size:15px; font-weight:300;">AAQ 물류창고</li>
+                                <li style="color:#7c818c; font-size:15px; font-weight:300;">AAR 물류창고</li>
+                                <li style="color:#7c818c; font-size:15px; font-weight:300;">AAS 물류창고</li>
+                            </ul>
+                        </div>
+                        </div>
+						<div class="container">
+                           <div class="con_status" >
+                         <!--문제발생-->
+						<div class="company_container">
+                        	<div class="tableTop" style="border-bottom:0.7px solid #eaeaea;">
+                                <div class="s_box" style="float:right;">
+                                <span style="color:#8e8f91; font-size:15px; font-weight:600;">Show:</span>
+                                <select style="width:100px; height:30px; color:#3c495a; font-size:15px; font-weight:600; padding-left:10px;  cursor:pointer; border:none;">
+                                	<option>전체보기</option>
+                                    <option>갱신근접</option>
+                                    <option>갱신불가</option>
+                                </select>
+                                 <input type="button" class="img-button" style="width:79px; height:29px; font-weight:bold; border-radius:2px; background-color:#31b3e9; font-size:15px;  " value="갱신">
+                                </div>
+                            </div>
+                            <div class="tableRectangle">
+                                <div style="width:30%; float:left;  font-size:17px; color:#111; font-style:normal; font-stretch:normal; letter-spacing:normal;">
+                                	<label class="check">
+									<input type="checkbox" id="checkall">
+                                    <span class="checkmark" style="width:20px; height:20px; margin-left:9px;"></span>
+                                    </label>
+                                </div>
+                                <div style="width:50%; float:left;  font-size:17px; color:#111; font-style:normal; font-stretch:normal; letter-spacing:normal; ">담보물명</div>
+                                <div style="width:20%; float:left;  font-size:17px; color:#111; font-style:normal; font-stretch:normal; letter-spacing:normal;">상태</div>
+                            </div>
+                            <div class="companyList_box">
+                              <section class='inner-container' id='inner-container'>
+                                <article  id="myBtn">
+                                  <div class="com_chk">
+                                  	<label class="check">
+										<input type="checkbox" name="chk">
+                                    	<span class="checkmark" style="width:20px; height:20px; margin-left:9px;"></span>
+                                    </label>
+                                    </div>
+                                  <div class="com_pack_num" class='client-name'>AAA담보물</div>
+                                  <div class="com_event"> <img src="images/list_icon_error_qrsticker.gif" style="vertical-align:middle;" alt=""> <img src="images/list_icon_error_timeover.gif"  style="vertical-align:middle;"></div>
+                                </article>
+                                <article>
+                                  <div class="com_chk">
+                                  	<label class="check">
+										<input type="checkbox" name="chk">
+                                    	<span class="checkmark" style="width:20px; height:20px; margin-left:9px;"></span>
+                                    </label>
+                                  </div>
+                                  <div class="com_pack_num" class='client-name'>AAB담보물</div>
+                                  <div class="com_event"> <img src="images/list_icon_error_qrsticker.gif" style="vertical-align:middle;" alt=""> <img src="images/list_icon_error_timeover.gif"  style="vertical-align:middle;"></div>
+                                </article>
+                                <article>
+                                  <div class="com_chk">
+                                  	<label class="check">
+										<input type="checkbox" name="chk">
+                                    	<span class="checkmark" style="width:20px; height:20px; margin-left:9px;"></span>
+                                    </label>
+                                  </div>
+                                  <div class="com_pack_num" class='client-name'>AAC담보물</div>
+                                  <div class="com_event"> <img src="images/list_icon_error_qrsticker.gif" style="vertical-align:middle;" alt=""> <img src="images/list_icon_error_timeover.gif"  style="vertical-align:middle;"></div>
+                                </article>
+                                <article>
+                                  <div class="com_chk">
+                                  	<label class="check">
+										<input type="checkbox" name="chk">
+                                    	<span class="checkmark" style="width:20px; height:20px; margin-left:9px;"></span>
+                                    </label>
+                                  </div>
+                                  <div class="com_pack_num" class='client-name'>AAD담보물</div>
+                                  <div class="com_event"> <img src="images/list_icon_error_qrsticker.gif" style="vertical-align:middle;" alt=""> <img src="images/list_icon_error_timeover.gif"  style="vertical-align:middle;"></div>
+                                </article>
+                                <article>
+                                  <div class="com_chk">
+                                  	<label class="check">
+										<input type="checkbox" name="chk">
+                                    	<span class="checkmark" style="width:20px; height:20px; margin-left:9px;"></span>
+                                    </label>
+                                  </div>
+                                  <div class="com_pack_num" class='client-name'>AAE담보물</div>
+                                  <div class="com_event"> <img src="images/list_icon_error_qrsticker.gif" style="vertical-align:middle;" alt=""> <img src="images/list_icon_error_timeover.gif"  style="vertical-align:middle;"></div>
+                                </article>
+                                <article>
+                                  <div class="com_chk">
+                                  	<label class="check">
+										<input type="checkbox" name="chk">
+                                    	<span class="checkmark" style="width:20px; height:20px; margin-left:9px;"></span>
+                                    </label>
+                                  </div>
+                                  <div class="com_pack_num" class='client-name'>AAF담보물</div>
+                                  <div class="com_event"> <img src="images/list_icon_error_qrsticker.gif" style="vertical-align:middle;" alt=""> <img src="images/list_icon_error_timeover.gif"  style="vertical-align:middle;"></div>
+                                </article>
+								<article>
+                                  <div class="com_chk">
+                                  	<label class="check">
+										<input type="checkbox" name="chk">
+                                    	<span class="checkmark" style="width:20px; height:20px; margin-left:9px;"></span>
+                                    </label>
+                                  </div>
+                                  <div class="com_pack_num" class='client-name'>AAG담보물</div>
+                                  <div class="com_event"> <img src="images/list_icon_error_qrsticker.gif" style="vertical-align:middle;" alt=""> <img src="images/list_icon_error_timeover.gif"  style="vertical-align:middle;"></div>
+                                </article>
+                                <article>
+                                  <div class="com_chk">
+                                  	<label class="check">
+										<input type="checkbox" name="chk">
+                                    	<span class="checkmark" style="width:20px; height:20px; margin-left:9px;"></span>
+                                    </label>
+                                  </div>
+                                  <div class="com_pack_num" class='client-name'>AAH담보물</div>
+                                  <div class="com_event"> <img src="images/list_icon_error_qrsticker.gif" style="vertical-align:middle;" alt=""> <img src="images/list_icon_error_timeover.gif"  style="vertical-align:middle;"></div>
+                                </article> 
+                                <article>
+                                  <div class="com_chk">
+                                  	<label class="check">
+										<input type="checkbox" name="chk">
+                                    	<span class="checkmark" style="width:20px; height:20px; margin-left:9px;"></span>
+                                    </label>
+                                  </div>
+                                  <div class="com_pack_num" class='client-name'>AAI담보물</div>
+                                  <div class="com_event"> <img src="images/list_icon_error_qrsticker.gif" style="vertical-align:middle;" alt=""> <img src="images/list_icon_error_timeover.gif"  style="vertical-align:middle;"></div>
+                                </article> 
+                                <article>
+                                  <div class="com_chk">
+                                  	<label class="check">
+										<input type="checkbox" name="chk">
+                                    	<span class="checkmark" style="width:20px; height:20px; margin-left:9px;"></span>
+                                    </label>
+                                  </div>
+                                  <div class="com_pack_num" class='client-name'>AAJ담보물</div>
+                                  <div class="com_event"> <img src="images/list_icon_error_qrsticker.gif" style="vertical-align:middle;" alt=""> <img src="images/list_icon_error_timeover.gif"  style="vertical-align:middle;"></div>
+                                </article> 
+                                <article>
+                                  <div class="com_chk">
+                                  	<label class="check">
+										<input type="checkbox" name="chk">
+                                    	<span class="checkmark" style="width:20px; height:20px; margin-left:9px;"></span>
+                                    </label>
+                                  </div>
+                                  <div class="com_pack_num" class='client-name'>AAK담보물</div>
+                                  <div class="com_event"> <img src="images/list_icon_error_qrsticker.gif" style="vertical-align:middle;" alt=""> <img src="images/list_icon_error_timeover.gif"  style="vertical-align:middle;"></div>
+                                </article> 
+                                <article>
+                                  <div class="com_chk">
+                                  	<label class="check">
+										<input type="checkbox" name="chk">
+                                    	<span class="checkmark" style="width:20px; height:20px; margin-left:9px;"></span>
+                                    </label>
+                                  </div>
+                                  <div class="com_pack_num" class='client-name'>AAL담보물</div>
+                                  <div class="com_event"> <img src="images/list_icon_error_qrsticker.gif" style="vertical-align:middle;" alt=""> <img src="images/list_icon_error_timeover.gif"  style="vertical-align:middle;"></div>
+                                </article> 
+                                <article>
+                                  <div class="com_chk">
+                                  	<label class="check">
+										<input type="checkbox" name="chk" >
+                                    	<span class="checkmark" style="width:20px; height:20px; margin-left:9px;"></span>
+                                    </label>
+                                  </div>
+                                  <div class="com_pack_num" class='client-name'>AAK담보물</div>
+                                  <div class="com_event"> <img src="images/list_icon_error_qrsticker.gif" style="vertical-align:middle;" alt=""> <img src="images/list_icon_error_timeover.gif"  style="vertical-align:middle;"></div>
+                                </article> 
+                                <article>
+                                  <div class="com_chk">
+                                  	<label class="check">
+										<input type="checkbox" name="chk">
+                                    	<span class="checkmark" style="width:20px; height:20px; margin-left:9px;"></span>
+                                    </label>
+                                  </div>
+                                  <div class="com_pack_num" class='client-name'>AAK담보물</div>
+                                  <div class="com_event"> <img src="images/list_icon_error_qrsticker.gif" style="vertical-align:middle;" alt=""> <img src="images/list_icon_error_timeover.gif"  style="vertical-align:middle;"></div>
+                                </article> 
+ 
+                            </section>
+                             </div>
+                             <div class="table_number">
+                                <img src="images/btn_prev.gif">
+                                <a style="font-weight:600; font-size:20px; padding:0 5px;">1</a>
+                                <a  style="font-weight:500; color:#7c818c; font-size:20px; padding:0 5px;">2</a>
+                                <a  style="font-weight:500;  color:#7c818c; font-size:20px; padding:0 5px;">3</a>
+                                <img src="images/btn_next.gif">
+                             </div>
+                            </div>
+                            <!--//company_container-->
+                            
+                            <!--modal_popup-->
+                            <div id="myModal" class="modal" style="color:#000;">
+                            
+                            	<div class="modal-content">
+                                	<div class="close" ><img src="images/iconfinder_icon-close.png" alt="" width="20"></div>
+                                    <div class="pop_header">
+                                    	<div class="company_nm_pop" ><span>홍길동업체</span></div>
+                                        <div class="dambo_nm_pop"><span>IOT DEVICE 120PCS (1line case)<p style="margin:0 !important;">CN-100(2LINE CASE)</span>
+                                    </div>
+                                    <!--//pop_header-->
+                                    <hr>
+                                    <div class="pop_body">
+                                    	<div class="map_box">
+                                        	<div id="map" style=" height: 650px;"></div>
+                                        </div>
+                                        <!--map_box-->
+                                        
+                                        <!--담보물을 갱신할 수 없습니다 일 경우에는  .dambo_reset_dd .dd_head{color:#111;} -->
+                                     
+                                        <div class="info_box">
+                                        	<div class="dambo_reset_dd">
+                                                <span class="dd_head">담보물 갱신 예정일</span>
+                                                <ul >
+                                                    <li class="date">2019. 08. 14</li>
+                                                    <li class="time">-18시간 59분</li>
+                                                    <li class="icon_event" ><img src="images/list_icon_error_stopwatch.gif" alt="" style="vertical-align:middle;"></li>
+                                                </ul>
+                                            </div>
+                                            <!--//dambo_reset_dd-->
+                                            <div class="dambo_reset_list">
+                                                <span class="dd_head">담보물 갱신 내역</span>
+                                                <div class="reset_list" >
+                                                    <ul>
+                                                        <li class="date">2019. 06. 30</li>
+                                                        <li class="reson">갱신일 초과</li>
+                                                        <li class="icon_event" ><img src="images/list_icon_error_timeover.gif"></li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li class="date">2019. 07. 30</li>
+                                                        <li class="reson">갱신완료</li>
+                                                        <li class="icon_event" ><img src="images/list_icon_check.png" width="35" ></li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li class="date">2019. 08. 30</li>
+                                                        <li class="reson">QR코드 스티커 파손</li>
+                                                        <li class="icon_event" ><img src="images/list_icon_error_qrsticker.gif" ></li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li class="date">2019. 05. 30</li>
+                                                        <li class="reson">담보물 위치 변경</li>
+                                                        <li class="icon_event" ><img src="images/list_icon_error_gps.gif"></li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li class="date">2019. 05. 30</li>
+                                                        <li class="reson">담보물 배경 변경</li>
+                                                        <li class="icon_event" ><img src="images/list_icon_error_place.gif"></li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li class="date">2019. 06. 30</li>
+                                                        <li class="reson">갱신일 초과</li>
+                                                        <li class="icon_event" ><img src="images/list_icon_error_timeover.gif"></li>
+                                                    </ul>
+                                                </div>
+                                                <!--//reset_list-->
+                                            </div>
+                                            <!--//dambo_reset_list-->
+                                        </div>
+                                        <!--//info_box-->
+                                        <div class="dambo_infomation" style="float:left; width:100%; margin-top:69px;">
+                                        <span class="dd_head">담당자 정보</span>
+                                            <ul >
+                                                <li class="manager_hd">담당자명</li>
+                                                <li class="manager_content">홍길동</li>
+                                            </ul>
+                                            <ul >
+                                                <li class="manager_hd">담당자 연락처</li>
+                                                <li class="manager_content">010-0000-0000</li>
+                                            </ul>
+                                    	</div>
+                                    	<!--//dambo_infomation-->
+                                         <div class="dambo_com_infomation" style="float:left; width:100%; ">
+                                        <span class="dd_head">대출업체 정보</span>
+                                            <ul >
+                                                <li class="com_hd">대출업체 지점</li>
+                                                <li class="com_content">경기도 안산시 원시동</li>
+                                            </ul>
+                                            <ul >
+                                                <li class="com_hd">업체 대표자명</li>
+                                                <li class="com_content">이순신</li>
+                                            </ul>
+                                            <ul >
+                                                <li class="com_hd">업체 연락처</li>
+                                                <li class="com_content">042-000-0000</li>
+                                            </ul>
+                                    	</div>
+                                    	<!--//dambo_infomation-->
+                                    </div>
+                                    <!--//pop_body-->
+                                </div>
+                                <!--//modal-content-->
+                            </div>	
+ 							<!--//myModal-->
+                            </div>
+                            <!--//con_status-->        
+				        </div>			
+                        <!--//container-->
+				    </section>
+                    <!-- //첫번째 영역-->
+			</div>
+            <!--//main-->
+ 
+
+		<!-- Footer -->
+
+			<div id="footer">
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li><img src="images/cntech_hp_logo.png" alt="" width="160px;"></li>
+                        <li style="text-align: left; font-size:0.8em; ">대전광역시 유성구 문화원로 146번길 17 4층<br>© Untitled. All rights reserved.</li>
+					</ul>
+
+
+			</div>
+
+ 
+
+		<!-- Scripts -->
+		
+            
+            <script src="assets/js/jquery.min.js"></script>
+        
+            <script src="http://code.jquery.com/jquery-1.8.2.min.js"></Script>
+            
+            <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+            
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+			
+            <!--반응형 Nav-->
+            
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			
+            <script src="assets/js/browser.min.js"></script>
+
+            <script src="assets/js/breakpoints.min.js"></script>
+            
+            <script src="assets/js/util.js"></script>
+			
+            <!--//반응형 Nav-->
+			
+			<script src="assets/js/main.js"></script>
+        
+	
+    </body>
+</html>
